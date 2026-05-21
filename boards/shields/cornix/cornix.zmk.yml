@@ -1,0 +1,17 @@
+file_format: "1"
+id: cornix
+name: cornix
+type: shield
+url: 
+requires: [e73_module]
+exposes: 
+features:
+  - keys
+  - underglow
+  - encoder
+  - zmk studio
+  - trackball
+siblings:
+  - cornix_L
+  - cornix_R
+
