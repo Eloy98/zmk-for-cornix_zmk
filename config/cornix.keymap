@@ -11,12 +11,10 @@
 / {
     keymap {
         compatible = "zmk,keymap";
+
         LAYER0 {
             bindings = <
-&trans    &trans     &trans    &trans    &trans     &trans                           &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans    &trans    &trans     &trans                           &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans    &trans    &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans    &trans    &trans     &trans                           &trans     &trans     &trans     &trans     &trans     &trans
+&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp CAPS  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp APOS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp C_MUTE  &kp C_STOP  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &mo 1  &kp LEFT  &kp SPACE  &kp ENTER  &kp RIGHT  &mo 2  &kp RGUI  &kp RALT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -25,11 +23,8 @@
 
         LAYER1 {
             bindings = <
-&trans    &trans     &trans    &trans    &trans     &trans                           &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans    &trans    &trans     &trans                           &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans    &trans    &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans    &trans    &trans     &trans                           &trans     &trans     &trans     &trans     &trans     &trans
-                      >;
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
             display-name = "LAYER 1";
@@ -37,30 +32,31 @@
 
         LAYER2 {
             bindings = <
-&trans    &trans     &trans    &trans    &trans     &trans                           &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans    &trans    &trans     &trans                           &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans    &trans    &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans    &trans    &trans     &trans                           &trans     &trans     &trans     &trans     &trans     &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
             display-name = "LAYER 2";
         };
-                extra1 {
+
+        extra1 {
             status = "reserved";
-                display-name = "LAYER 3";
+            display-name = "LAYER 3";
         };
+
         extra2 {
             status = "reserved";
-                display-name = "LAYER 4";
+            display-name = "LAYER 4";
         };
+
         extra3 {
             status = "reserved";
-                display-name = "LAYER 5";
+            display-name = "LAYER 5";
         };
+
         extra4 {
             status = "reserved";
-                display-name = "LAYER 6";
+            display-name = "LAYER 6";
         };
     };
 };
